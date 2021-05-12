@@ -32,9 +32,12 @@ for(i=0;i<squadre.length;i++){
 console.log(squadre);
 // Infine creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
-var arrayDati= [];
+var squadreFalliSubiti = [];
+ 
 for (i=0;i<squadre.length;i++){
-    arrayDati.push(squadre[i].nome);
-    arrayDati.push(squadre[i].falli);
-}
-console.log(arrayDati);
+    var squadraFalliSubiti = {};
+    squadraFalliSubiti.nome = squadre[i].nome;
+    squadraFalliSubiti.falli = squadre[i].falli;
+    squadreFalliSubiti.push(squadraFalliSubiti);
+} 
+ console.log(squadreFalliSubiti);
